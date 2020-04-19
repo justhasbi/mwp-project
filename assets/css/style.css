@@ -89,7 +89,7 @@ nav .search {
     margin: 10px auto;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
 }
 
 
@@ -122,7 +122,7 @@ nav .search {
 .boxs .tag-product {
     position: absolute;
     background-color: #fff;
-    padding: 0 20px;
+    padding: 5px 10px;
 }
 .boxs img{
     width: 100%;
@@ -623,7 +623,15 @@ footer .cpr span{
         border-radius: 0;
         box-shadow: none;
       }
-      
+
+    .boxs .tag-product h3 {
+        font-size: 0.9em;
+        padding: 0;
+        margin: 0;
+    }
+    .boxs .tag-product p {
+        margin: 0;
+    }
     .coba { 
         position: relative;
         grid-area: 1 / 1 / 2 / 2; 
