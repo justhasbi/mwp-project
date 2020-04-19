@@ -22,9 +22,11 @@ h1, h2, h3 {
 header {
     margin: 30px auto;
     display: flex;
+    flex-wrap: wrap;
     background: #fff;
     justify-content: space-between;
 }
+
 
 .logo {
     text-decoration: none;
@@ -157,7 +159,7 @@ nav .search {
 }
 
 .flex-container .box .product-title img{
-    width: 30%;
+    width: 50%;
 }
 
 .latest-product .disc {
@@ -182,6 +184,7 @@ nav .search {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 .wrapper .second-nav li {
     padding: 0 20px;
@@ -198,6 +201,7 @@ nav .search {
 
 .second-nav-product {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
     margin: 70px 0 50px 0 ;
 }
@@ -217,7 +221,7 @@ nav .search {
 }
 
 .second-nav-product .second-nav-title img {
-    width: 40%;
+    width: 60%;
 }
 
 /* Button global */
@@ -289,7 +293,7 @@ nav .search {
 }
 .newsletter input {
     padding: 15px;
-    width: 45%;
+    width: 50%;
     border-radius: 25px;
     border: none;
     outline: none;
@@ -346,5 +350,92 @@ footer .cpr span{
 .github {
     font-size: 0.5em;
     color: #FFA200;
+}
+@media (max-width:750px) {
+    .latest-product .flex-container .product-title  img{
+        width: 40%;
+    }
+    .latest-product .flex-container .box {
+        width: 40%;
+        padding: 10px;
+    }
+    .wrapper .second-nav-product {
+        width: 90%;
+        margin: 30px auto 20px auto;
+    }
+
+    .wrapper .second-nav li{
+        padding: 0 10px;
+        font-size: 0.9em;
+    }
+
+    .wrapper .second-nav-product .card {
+        width: 80%;
+    }
+
+    .wrapper .second-nav-product .second-nav-title img {
+        width: 60%;
+    }
+
+    .wrapper .second-nav-product .second-nav-title {
+        font-size: 0.8em;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .newsletter .newsletter-form input{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:450px){
+    header .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav {
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .latest-title {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .latest-product .flex-container .box {
+        width: 70%;
+        padding: 10px;
+    }
+    .latest-product .flex-container .product-title  img{
+        width: 50%;
+    }
+
+    .second-nav-product {
+        flex-wrap: wrap;
+    }
+    .second-nav-product .card {
+        width: 80%;
+    }
+    .newsletter .newsletter-form input {
+        text-align: center;
+        
+    }
+    .blog-container {
+        flex-wrap: wrap;
+    }
+
+    .blog-container .box {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
 }
 
